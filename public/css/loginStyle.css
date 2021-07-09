@@ -1,27 +1,24 @@
-
-
-*{
+* {
   box-sizing: border-box;
 }
 
-body ,.container{
+body,
+.container {
   margin: 0;
   height: 100vh;
   width: 100vw;
 }
 
-
-.container{
+.container {
   background: aquamarine;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-image: linear-gradient(to right, #DECBA4, #3E5151);
-
+  background-image: linear-gradient(to right, #decba4, #3e5151);
 }
 
-.loginBox{
+.loginBox {
   width: 40%;
   height: 60%;
   background-color: #1b262c;
@@ -35,7 +32,7 @@ body ,.container{
   border-radius: 8%;
 }
 
-.loginBox div{
+.loginBox div {
   width: 80%;
   /* border: 2px solid; */
   display: flex;
@@ -44,18 +41,17 @@ body ,.container{
   justify-content: space-evenly;
 }
 
-.textContainer{
+.textContainer {
   height: 20%;
-  font-size: 26px;
+  font-size: 30px;
   color: white;
 }
 
-
-.inputContainer{
+.inputContainer {
   height: 50%;
 }
 
-.inputContainer input{
+.inputContainer input {
   width: 70%;
   height: 2.3rem;
   outline: none;
@@ -65,46 +61,85 @@ body ,.container{
   font-size: 17px;
 }
 
-
-
-
-.signinContainer{
+.signinContainer {
   height: 30%;
 }
 
-.forgetBtn{
-  font-size: 18PX;
+.forgetBtn {
+  font-size: 18px;
 }
 
-.signinBtn{
+.signinBtn {
   width: 50%;
   height: 25%;
 }
 
-.signinBtn:hover{
+.signinBtn:hover {
   background-color: red;
   color: #f0f0d8;
 }
 
-.signupBtn{
+.signupBtn {
   font-size: 22px;
   text-decoration: none;
 }
-a{
+a {
   color: #f0f0d8;
-  font-style:oblique;
+  font-style: oblique;
 }
 
-.isHost:hover ,.select{
-  background-color: #4B4B4B;
+.isHost:hover,
+.select {
+  background-color: #4b4b4b;
   color: #f0f0d8;
 }
 
-.isActive{
-display: block!important;
-
+.isActive {
+  display: block !important;
 }
 
-.isHost{
+.isHost {
   width: 40%;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .loginBox {
+    width: 60%;
+  }
+  .textContainer {
+    font-size: 24px;
+  }
+
+  .inputContainer input {
+    width: 80%;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .loginBox {
+    width: 70%;
+  }
+  .textContainer {
+    font-size: 22px;
+  }
+
+  .inputContainer input {
+    width: 90%;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .loginBox {
+    width: 80%;
+  }
+  .textContainer {
+    font-size: 20px;
+  }
+  .inputContainer input {
+    width: 95%;
+    font-size: 12px;
+  }
 }
